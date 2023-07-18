@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  background: no-repeat center center fixed;
+  background-size: cover;
+  width: 100%;
+  overflow-x:scroll;
+  background-image: url('./assets/Images/backgrounds/background_1.jpg');
+  background-image: none;
+  background-image: url('./assets/Images/backgrounds/bubbles.png');
+  background-color: rgba(0, 0, 0, 1);
+  margin: 0 auto;
+}

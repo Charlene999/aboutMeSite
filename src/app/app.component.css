@@ -1,0 +1,344 @@
+/*
+    Color Palette (RGBA)
+      Black (Body Background): rgba(0, 0, 0, 1);
+      White Transparent (New Navbar): rgba(255, 255, 255, .91);
+      Black & Purple Gradient Background (Logo): background-image: radial-gradient(rgba(255, 0, 255, 1), rgba(0, 0, 0, 1));
+      Inverse Black & Purple Gradient (Logo hover): background-image: radial-gradient(rgba(0, 0, 0, 1), rgba(255, 0, 255, 1));
+      Red & Blue Gradient (Gymnastics Background): background-image: linear-gradient(rgba(255, 0, 0, 1), rgba(3, 46, 132, 1));
+      Orange & Green Gradient (Gator Background): background-image: linear-gradient(rgba(249, 72, 29, 1), rgba(3, 132, 46, 1));
+      Blue & White Gradient (Career Background): background-image: radial-gradient(rgba(0, 100, 255, 1), rgba(255, 255, 255, 1));
+      Lavender & White Gradient (Self-Portrait): background-image: radial-gradient(rgba(216, 117, 255, 1), rgba(255, 255, 255, 1));
+*/
+
+/*Navbar colors, size, and margins*/
+
+/*Navbar class*/
+.menuLinks {
+  position: fixed;
+  top: 0px;
+  margin: 0 auto;
+  width: 100%;
+  background-color: rgba(255, 255, 255, .91);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/*Menu Links size, margins, positioning, font*/
+.menuLinks a, .menuLinkSelect, .footer a {
+  text-decoration: none;
+  display: inline-block;
+  float: right;
+  color: white;
+  border: solid;
+  border-color: transparent;
+  border-width: 2.5px;
+  border-radius: 4px;
+  margin: 0 auto;
+  margin-right: 10px;
+  padding: 10.667px;
+  height: 100%;
+  width: fit-content;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+  font-size: 25px;
+}
+
+/*Logo and name in kunstler script*/
+.menuLinkLogo, .lifePictureSection {
+  font-family: 'Kunstler Script', monospace;
+  font-size: 30px;
+  font-weight: 600;
+  text-shadow: 0px 0px 10px rgba(255, 255, 255, 1);
+}
+/*Initial background color for navbar elements*/
+.myLifeLink, .myAcademiaLink, .myGymLink, .myTechLink, .myLifeLink, .menuLinkSelect{
+  background-image: radial-gradient(rgba(255, 0, 255, 1), rgba(0, 0, 0, 1));
+}
+
+/*Cursor change for navbar elements*/
+.myAcademiaLink, .myAcademiaLink:active
+{
+    cursor: pointer;
+}
+
+/*Individual navbar elements hover and active*/
+.myLifeLink:hover, .menuLinkSelect:hover {
+  cursor: pointer;
+  background-image: radial-gradient(rgba(0, 0, 0, 1), rgba(255, 0, 255, 1));
+}
+
+.myTechLink:hover {
+  background-size: cover;
+  background-image: url("../assets/Images/backgrounds/Binary Tunnel.jpg");
+  text-shadow: 0px 0px 25px rgb(0, 0, 0);
+}
+
+.myGymLink:hover{
+  cursor: pointer;
+  background-image: linear-gradient(rgba(255, 0, 0, 1), rgba(3, 46, 132, 1));
+}
+
+/*Logo positioning, coloring, margins, et cetera*/
+.logo {
+  float: left;
+  color: white;
+  text-shadow: 0px 0px 10px rgb(255, 255, 255);
+  border: solid;
+  border-color: transparent;
+  border-width: 2.5px;
+  border-radius: 4px;
+  padding: 0;
+  margin: 0 auto;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-family: 'Kunstler Script';
+  background-image: radial-gradient(rgba(255, 0, 255, 1), rgba(0, 0, 0, 1));
+}
+
+.logo:hover {
+  cursor: pointer;
+  background-image: radial-gradient(rgba(0, 0, 0, 1), rgba(255, 0, 255, 1));
+}
+
+.logo:active {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+/*Select options text*/
+.menuLinks option {
+  color: black;
+}
+
+/*
+    Sections on front Page CSS
+*/
+.sections
+{
+    width: 100%;
+    position: absolute;
+    top: 86px;
+}
+
+/*Sections sizes and margins*/
+.myLifeSection, .myAcademicsSection, .myGymnasticsSection, .myCareerSection {
+  margin: auto;
+  margin-top: 80px;
+  height: 450px;
+  width: 95%;
+  border-radius: 10px;
+  display: flex;
+  background: no-repeat center center fixed;
+  background-image: url("../assets/Images/backgrounds/bubbles.png");
+  background-image: none;
+  background-size: cover;
+  background-color: rgba(216, 117, 255, .81);
+}
+
+/*Individual sections' backgrounds*/
+.myLifeSection
+{
+  background-image: radial-gradient(rgba(255, 0, 255, 1), rgba(0, 0, 0, 1));
+}
+
+.myAcademicsSection, .myAcademiaLink:hover {
+  background-image: linear-gradient(rgba(3, 132, 46, 1), rgba(249, 72, 29, 1));
+}
+
+.myGymnasticsSection {
+  background-image: url("../assets/Images/backgrounds/gym_3.jpg");
+}
+
+/*Text for each section*/
+.myLifeText {
+  border-radius: 4px;
+  width: 100%;
+  height: 100%;
+  padding-top: 0;
+  margin: 0;
+  font-size: 24px;
+  text-shadow: 0px 0px 25px rgb(255, 255, 255);
+  color: white;
+}
+
+.myLifeText h1
+{
+  font-family: 'Goudy Stout';
+  text-align: center;
+}
+
+.myLifeSectPText, .myAcademiaSectPText, .myGymnasticsSectPText, .myCareerSectPText {
+  margin-top: 70px;
+  background-color: rgba(216, 117, 255, .81);
+  text-shadow: 0px 0px 25px rgb(0, 0, 0);
+  border-radius: 4px;
+  font-family: Calibri;
+}
+
+.myAcademiaSectPText
+{
+    background-color: rgba(3, 38, 182, 1);
+}
+
+.myGymnasticsSectPText {
+  text-shadow: 0px 0px 45px rgb(0, 0, 0);
+  background-image: radial-gradient(rgba(3, 46, 132, 1), rgba(3, 46, 132, 1));
+}
+
+.myCareerSection h1 {
+  text-shadow: 0px 0px 45px rgb(0, 0, 0);
+  background-image: radial-gradient(rgba(0, 0, 75, .61), rgba(0, 100, 255, .81));
+  position: absolute;
+  top: 73%;
+  left: 2.6%;
+  width: 79%;
+  border-radius: 4px;
+}
+
+.myCareerSectPText {
+  position: absolute;
+  top: 76.9%;
+  width: 79.37%;
+  color: rgb(0, 0, 75);
+  background-color: white;
+  text-shadow: 0px 0px 25px rgb(255, 255, 255);
+}
+
+.myGymnasticsSection h1 {
+  text-shadow: 0px 0px 10px rgb(0, 0, 0);
+  background-image: radial-gradient(rgba(255, 0, 0, 1), rgba(3, 46, 132, 1));
+  border-radius: 4px;
+}
+
+/*Positioning and sizing of sections*/
+.lifePictureSection, .academiaPictureSection, .gymnasticsPictureSection, .careerPictureSection {
+  position: relative;
+  width: fit-content;
+  left: 0%;
+  height: 100%;
+  border-radius: 4px;
+}
+
+/*Background colors of sections*/
+.lifePictureSection
+{
+  background-image: radial-gradient(rgba(216, 117, 255, 1), rgba(255, 255, 255, 1));
+}
+
+.academiaPictureSection {
+  background-image: linear-gradient(rgba(249, 72, 29, 1), rgba(3, 132, 46, 1));
+}
+
+.gymnasticsPictureSection {
+  background-image: linear-gradient(rgba(255, 0, 0, 1), rgba(3, 46, 132, 1));
+}
+
+.careerPictureSection {
+  background-image: radial-gradient(rgba(0, 100, 255, 1), rgba(255, 255, 255, 1));
+}
+
+/*Binary background*/
+.binaryTunnel
+{
+    border-radius: 4px;
+    opacity: 70%;
+}
+
+/*Signature Text*/
+.lifePictureSection a {
+  display: block;
+  width: 90%;
+  text-align: center;
+  color: white;
+  border-radius: 4px;
+  background-image: radial-gradient(rgba(255, 0, 255, 1), rgba(0, 0, 0, 1));
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+/*All pictures right side of sections display format*/
+.sectionsPics {
+  display: block;
+  border-radius: 50%;
+  border-width: 8px;
+  border:solid;
+  vertical-align: middle;
+  margin-right: 5px;
+  background-image: radial-gradient(rgba(255, 0, 255, 1), rgba(0, 0, 0, 1));
+  border-color: white;
+  margin-top: 30%;
+}
+
+/*Front Page Footer Section*/
+
+.footer {
+  display: block;
+  height: 60px;
+  position: relative;
+  bottom: 0px;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-right: 5px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, .91);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  vertical-align: middle;
+  font-size: 20px;
+}
+.footer p
+{
+    display: inline-block;
+}
+.footer a
+{
+    padding: 0;
+    font-size: 30px;
+}
+.footerLink {
+  display: inline-block;
+  width: fit-content;
+  border-radius: 4px;
+  padding: 10.667px;
+  padding-right: 7.667px;
+  margin: 0 auto;
+  margin-right: 10px;
+  background-image: radial-gradient(rgba(255, 0, 255, 1), rgba(0, 0, 0, 1));
+}
+
+.footerLink, .footer p
+{
+    position: relative;
+    bottom: 30%;
+}
+
+.footerLink
+{
+    left: 25%;
+}
+.footerLink:hover {
+  cursor: pointer;
+  background-image: radial-gradient(rgba(0, 0, 0, 1), rgba(255, 0, 255, 1));
+}
+.footerImg {
+  text-align:center;
+  vertical-align:middle;
+  border-radius: 4px;
+}
+
+.footerLogo
+{
+    margin-top: 5px;
+}
+/*
+    Color Palette (RGBA)
+      Black (Body Background): rgba(0, 0, 0, 1);
+      White Transparent (New Navbar): rgba(255, 255, 255, .91);
+      Black & Purple Gradient Background (Logo): background-image: radial-gradient(rgba(255, 0, 255, 1), rgba(0, 0, 0, 1));
+      Inverse Black & Purple Gradient (Logo hover): background-image: radial-gradient(rgba(0, 0, 0, 1), rgba(255, 0, 255, 1));
+      Red & Blue Gradient (Gymnastics Background): background-image: linear-gradient(rgba(255, 0, 0, 1), rgba(3, 46, 132, 1));
+      Orange & Green Gradient (Gator Background): background-image: linear-gradient(rgba(249, 72, 29, 1), rgba(3, 132, 46, 1));
+      Blue & White Gradient (Career Background): background-image: radial-gradient(rgba(0, 100, 255, 1), rgba(255, 255, 255, 1));
+      Lavender & White Gradient (Self-Portrait): background-image: radial-gradient(rgba(216, 117, 255, 1), rgba(255, 255, 255, 1));
+*/
